@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://fbertolo.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Encargo 01</title>
+      <title>0 - Post 1</title>
       <link>https://fbertolo.github.io/docs/post-1/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>Encargo Planimetría</title>
+      <title>1 - Planimetría</title>
       <link>https://fbertolo.github.io/docs/planimetr%C3%ADas/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -26,21 +26,12 @@
     </item>
     
     <item>
-      <title>Taller - Encargo 01</title>
-      <link>https://fbertolo.github.io/docs/taller-espacio-ciudad/</link>
+      <title>2 - Mecanizado CNC</title>
+      <link>https://fbertolo.github.io/docs/mecanizado-cnc/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://fbertolo.github.io/docs/taller-espacio-ciudad/</guid>
-      <description>Contenido de primera entrega dibujos a mano alzada.</description>
-    </item>
-    
-    <item>
-      <title>Taller - Encargo 02</title>
-      <link>https://fbertolo.github.io/docs/taller-entrega-02/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://fbertolo.github.io/docs/taller-entrega-02/</guid>
-      <description>Contenido de segunda entrega taller. Referentes y propuesta de valor.</description>
+      <guid>https://fbertolo.github.io/docs/mecanizado-cnc/</guid>
+      <description>Encargo Mecanizado CNC, tutorial hecho por mi.</description>
     </item>
     
     <item>
