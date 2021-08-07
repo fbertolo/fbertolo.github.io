@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>3 - Mecanizado 2.5 Ejes - Francesco Bertolo - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://fbertolo.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://fbertolo.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://fbertolo.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/post-1/">0 - Post 1</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/planimetr%C3%ADas/">1 - Planimetría</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://fbertolo.github.io/docs/mecanizado-2.5-ejes/">3 - Mecanizado 2.5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">3 - Mecanizado 2.5 Ejes</h1>
+<div class="content ">
+  <!-- raw HTML omitted -->
+<h2 id="ejemplo-de-moldeo-y-fundición-mediante-la-técnica-de-desbaste-en-cnc-se-entrega-información-paso-a-paso-acompañado-de-imágenes-y-videos">Ejemplo de moldeo y fundición mediante la técnica de desbaste en CNC. Se entrega información paso a paso, acompañado de imágenes y videos.</h2>
+<h1 id="contenido-del-tutorial">Contenido del Tutorial</h1>
+<ul>
+<li><a href="#paso-1-exportar-el-archivo">Paso 1 - Exportar el archivo.</a></li>
+<li><a href="#paso-2-posicionamiento-del-respaldo">Paso 2 - Posicionamiento del Respaldo.</a></li>
+<li><a href="#paso-3-generaci%C3%B3n-del-espacio-de-trabajo-sketch">Paso 3 - Generación del espacio de trabajo - Sketch</a></li>
+<li><a href="#paso-4-modo-fabricaci%C3%B3n-configuraci%C3%B3n-del-modo">Paso 4 - Modo Fabricación. Configuración del modo.</a></li>
+<li><a href="#paso-5-project-en-modo-dise%C3%B1o">Paso 5 - Project en Modo Diseño.</a></li>
+<li><a href="#paso-6-modo-fabricaci%C3%B3n-limpieza-adaptativo">Paso 6 - Modo Fabricación. Limpieza Adaptativo.</a></li>
+<li><a href="#paso-7-terminaci%C3%B3n-paralela">Paso 7 - Terminación Paralela.</a></li>
+<li><a href="#paso-8-edici%C3%B3n-de-la-fresa">Paso 8 - Edición de la Fresa.</a></li>
+<li><a href="#paso-9-simulaci%C3%B3n-final">Paso 9 - Simulación Final.</a></li>
+<li><a href="#fotos-reales">Fotos reales</a></li>
+</ul>
+<hr>
+<h2 id="paso-1-exportar-el-archivo">Paso 1. Exportar el archivo.</h2>
+<p>Para empezar con el tutorial y el mecanizado, debemos tener abierto nuestro archivo de la silla fresia utilizado en el tutorial anterior para luego seleccionar el respaldo en la lista de Bodies, que tras hacer click derecho sobre él, hay que crear un nuevo componente desde el Bodie.</p>
+<p><img src="/img/cnc2.5/export/01.png" alt="Nuevo Componente"></p>
+<p>Una vez creado el nuevo componente, hacemos click derecho sobre él nuevamente, para Exportarlo en formato de archivo Fusion (.f3d)</p>
+<p><img src="/img/cnc2.5/export/02.png" alt="Export"></p>
+<p><img src="/img/cnc2.5/export/03.png" alt="Export"></p>
+<p>Ahora abriremos el archivo del respaldo como un archivo nuevo de trabajo en Fusion 360, el cual debería observarse de la siguiente manera:</p>
+<div>
+    <iframe 
+    src='https://a360.co/2UL0och'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<h2 id="paso-2-posicionamiento-del-respaldo">Paso 2. Posicionamiento del Respaldo.</h2>
+<p>Con el archivo del respaldo ya abierto, utilizamos el comando Move desde la vista Frontal y lo rotamos en 90º para mantener la ortogonalidad.</p>
+<p><img src="/img/cnc2.5/01.png" alt="Rotación vista frontal"></p>
+<p>Ahora desde la vista Superior, utilizamos el comando Move nuevamente para tratar de dejar el respaldo recto a lo que vendria siendo el stock.</p>
+<p><img src="/img/cnc2.5/02.png" alt="Rotación vista superior"></p>
+<p>Con estos cambios, debemos asegurarnos que el archivo se encuentre bien orientado con respecto al origen en su ortogonalidad. Por lo que en el menú de comandos Modify, seleccionaremos la opción de Align. Con éste comando debemos apretar en la cara derecha del respaldo para luego ser alineada con el eje Y, al igual que en las imágenes referenciales. (Cambié el color del entorno para poder tener mejor contraste de colores).</p>
+<p><img src="/img/cnc2.5/03.png" alt="Align"></p>
+<p><img src="/img/cnc2.5/04.png" alt="Align"></p>
+<p><img src="/img/cnc2.5/05.png" alt="Align"></p>
+<p>Vovlemos a utilizar el comando Move para dejar el respaldo lo más cercano posible al origen, sin que éste lo toque.</p>
+<p><img src="/img/cnc2.5/06.png" alt="Move"></p>
+<h2 id="paso-3-generación-del-espacio-de-trabajo-sketch">Paso 3. Generación del espacio de trabajo. Sketch</h2>
+<p>Creamos un Sketch utilizando como eje el plano que se encuentra en la base del respaldo, para luego hacer un rectángulo, el cual no importa sus medidas, pero sí que sobrepase el tamaño del componente.</p>
+<p><img src="/img/cnc2.5/07.png" alt="Rectangulo"></p>
+<p>Luego, con el comando Extrude (Tecla E) aplicaremos una extrusión a nuestro rectángulo recién hecho. Este debe superar el tamaño del respaldo (en mi caso, lo supera con 50mm). Finalizamos la operación, cambiándo la creación de este Extrude como un Cuerpo Nuevo y damos en Ok.</p>
+<p><img src="/img/cnc2.5/08.png" alt="Extrude"></p>
+<p>Le cambiamos la opacidad a un 20% con el fin de poder observar y entender lo que estará pasando en el mecanizado y  al interior de este nuevo cuerpo.</p>
+<p><img src="/img/cnc2.5/09.png" alt="Opacidad"></p>
+<h2 id="paso-4-modo-fabricación-configuración-del-modo">Paso 4. Modo Fabricación. Configuración del modo.</h2>
+<p>Una vez ya dentro del modo Fabricación, al igual que en el tutorial anterior, debemos configurar el setup.
+Elegimos nuestra máquina Autodesk de 3 ejes.</p>
+<p><img src="/img/cnc2.5/10.png" alt="Máquina"></p>
+<p>En el submenú de Stock, elegimos como modo &ldquo;Desde Sólido&rdquo; y seleccionamos nuestro rectángulo recién creado.</p>
+<p><img src="/img/cnc2.5/11.png" alt="Stock"></p>
+<p>Volviendo al menú principal del Setup, debemos seleccionar como orientación el plano Z y eje X, además como punto de origen la esquina superior, de la misma forma que la imagen referencial, para finalizar con seleccionar el respaldo como modelo de la fabricación.</p>
+<p><img src="/img/cnc2.5/12.png" alt="Punto de origen"></p>
+<h2 id="paso-5-project-en-modo-diseño">Paso 5. Project en Modo Diseño.</h2>
+<p>Volvemos al modo diseño y creamos un Sketch nuevo seleccionando la cara superior del stock. Luego creamos un Proyectar (Tecla P). Utilizamos el filtro de selección en la opción de cuerpos y seleccionamos el respaldo desde el menú. Damos en Ok y tendremos una área de interés del mecanizado, con el fin de optimizar el mecanizado.</p>
+<p><img src="/img/cnc2.5/13.png" alt="Proyectar"></p>
+<p><img src="/img/cnc2.5/14.png" alt="Área"></p>
+<h2 id="paso-6-modo-fabricación-limpieza-adaptativo">Paso 6. Modo Fabricación. Limpieza Adaptativo.</h2>
+<p>A través de éste comando lograremos generar un desvaste o limpieza, al remover partes de la pieza para acelerar y optimizar el mecanizado.</p>
+<p>Debemos seleccionar la máquina de Fresa, por lo que repetiremos los mismos pasos del tutorial anterior. Es decir, la máquina de punta plana de 6mm. Luego, en la configuración de Geometría, en la opción de &ldquo;Contorno de Mecanizado&rdquo; hay que elegir la opción de &ldquo;Selección&rdquo;. Tras esto, seleccionamos el área creada a través del comando Project, para luego seleccionar el respaldo como el &ldquo;Body&rdquo; a trabajar. Para finalizar, nos dirigimos al menú &ldquo;Passes&rdquo; y dejamos la medida de 3mm como &ldquo;Carga Óptima&rdquo;.</p>
+<p><img src="/img/cnc2.5/15.png" alt="Config Limpieza Adaptativa"></p>
+<p>Tras esto, comnezará a cargar el trayecto que realizaría la Fresa. Esto puede tomar un par de minutos. Finalmente, debería quedar similar a la foto a continuación.</p>
+<p><img src="/img/cnc2.5/16.png" alt="Comando Limpieza"></p>
+<h2 id="paso-7-terminación-paralela">Paso 7. Terminación Paralela.</h2>
+<p>Ahora utilizaremos el comando &ldquo;Paralelo&rdquo; dentro de la sección de comandos 3D, manteniendo la misma Fresa como herramienta. Dentro del menú de Geometría, mantendremos el &ldquo;Contorno de Mecanizado&rdquo; bajo la opción de &ldquo;Selección&rdquo;, para luego seleccionar nuestra área superior creada anteriormente. Apretamos en el respaldo como el modelo y cuerpo a trabajar, desactivando la casilla de &ldquo;Incluir configuración del modelo&rdquo;, para finalizar dando en Ok.</p>
+<p><img src="/img/cnc2.5/17.png" alt="Comando Paralelo"></p>
+<p>A través de éste comando se genera una trayectoria en donde la Fresa sigue la superficie del respaldo, con el fin de otorgar una terminación más continua.</p>
+<p>Cada vez que uno realiza este tipo de operación en un objeto, lo ideal es realizarla en ambos sentidos, es decir horizontal y verticual, por lo que tendremos que duplicar nuestra operación. Una vez duplicada, debe ser editada.
+Nos dirigimos al submenú de &ldquo;Pasos&rdquo; para cambiar la &ldquo;Dirección de la Pasada&rdquo; de 0º a 90º grados y reduciendo la &ldquo;Sobrepasada&rdquo; de 3mm a 2mm, apretando en Aceptar para finalizar el editado.</p>
+<p><img src="/img/cnc2.5/18.png" alt="Comando Paralelo Horizontal"></p>
+<p>Después de todos los comandos y al realizar una Simulación, nos podremos dar cuenta de que la Fresa está teniendo problemas de roces con nuestro stock, por lo que tendremos que editarla con el fin de no generar impacto y problemas en nuestro trabajo.</p>
+<h2 id="paso-8-edición-de-la-fresa">Paso 8. Edición de la Fresa.</h2>
+<p>Primero tendremos que dirigirnos a nuestra &ldquo;Biblioteca de Herramientas&rdquo; para obtener un listado de todas las posibles herramientas a utilizar.</p>
+<p>Ubicamos nuestra Fresa de 6mm en el listado y con el click derecho seleccionamos la opción de &ldquo;Editar Herramienta&rdquo;.</p>
+<p>Una vez aquí, le cambiamos el nombre a &ldquo;6mm Editada Larga&rdquo; para no confundirnos con las herramientas ya existentes. Nos dirigimos al submenú &ldquo;Cortador&rdquo; y podremos observar la información que nos interesa editar. En la opción de &ldquo;Longitud por debajo del soporte&rdquo; cambiaremos la medida de 22,5mm a 40mm, entregando así una longitud mayor a la Fresa para evitar posibles errores en nuestro trabajo.</p>
+<p><img src="/img/cnc2.5/19.png" alt="Comando Paralelo Horizontal"></p>
+<p>Tras esto, tendremos que cambiar la Fresa como herramienta en el Setup de cada uno de nuestros comandos realizados anteriormente, para así actualizar la herramienta de trabajo. Al hacer esto, la &ldquo;Sobrepasada&rdquo; en el submenú &ldquo;Pasos&rdquo; se cambiará automáticamente a 6mm, lo cual debemos volver a colocar en 3mm.</p>
+<h2 id="paso-9-simulación-final">Paso 9. Simulación Final.</h2>
+<p>Para finalizar, realizaremos una simulación que incluya las 3 operaciones, para verificar que todo está funcionando de manera correcta y sin generar colisiones entre nuestro Cabezal/Holder y nuestro Stock.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img//cnc2.5/simulacion2.5.mov"  type="video/mp4">
+    </video>
+</div></p>
+<h2 id="fotos-reales">Fotos reales</h2>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/cnc2.5/fotosreales//FR1.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR1.png" alt="Fr1" />
+				    </div>
+			      <figcaption>
+		          <p>Fr1</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/cnc2.5/fotosreales//FR2.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR2.png" alt="Fr2" />
+				    </div>
+			      <figcaption>
+		          <p>Fr2</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/cnc2.5/fotosreales//FR3.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR3.png" alt="Fr3" />
+				    </div>
+			      <figcaption>
+		          <p>Fr3</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/cnc2.5/fotosreales//FR4.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR4.png" alt="Fr4" />
+				    </div>
+			      <figcaption>
+		          <p>Fr4</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR4.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/cnc2.5/fotosreales//FR5.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR5.png" alt="Fr5" />
+				    </div>
+			      <figcaption>
+		          <p>Fr5</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR5.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/cnc2.5/fotosreales//FR6.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR6.png" alt="Fr6" />
+				    </div>
+			      <figcaption>
+		          <p>Fr6</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/cnc2.5/fotosreales//FR6.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<ul>
+<li><a href="#contenido-del-tutorial">Volver Arriba</a></li>
+</ul>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
