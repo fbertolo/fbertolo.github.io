@@ -44,6 +44,24 @@
     </item>
     
     <item>
+      <title>4 - Simulación y Diseño Generativo</title>
+      <link>https://fbertolo.github.io/docs/dise%C3%B1o-generativo/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://fbertolo.github.io/docs/dise%C3%B1o-generativo/</guid>
+      <description>Encargo Diseño Generativo y Simulación. Primeras aproximaciones de simulación y optimización por diseño generativo.</description>
+    </item>
+    
+    <item>
+      <title>5 - Impresión 3D</title>
+      <link>https://fbertolo.github.io/docs/impresion3d/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://fbertolo.github.io/docs/impresion3d/</guid>
+      <description>Encargo Impresión 3D. Introducción al software Ultimaker Cura.</description>
+    </item>
+    
+    <item>
       <title>Ejemplo Shortcodes</title>
       <link>https://fbertolo.github.io/docs/ejemplo/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
