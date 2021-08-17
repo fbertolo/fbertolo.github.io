@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Complementario - Creación de Molde - Francesco Bertolo - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://fbertolo.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://fbertolo.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://fbertolo.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/post-1/">0 - Post 1</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/planimetr%C3%ADas/">1 - Planimetría</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/mecanizado-2.5-ejes/">3 - Mecanizado 2.5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/dise%C3%B1o-generativo/">4 - Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/impresion3d/">5 - Impresión 3D</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/experimentacionmateriales/">6 - Experimentación Material</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://fbertolo.github.io/docs/moldes/">Complementario - Creación de Molde</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Complementario - Creación de Molde</h1>
+<div class="content ">
+  <!-- raw HTML omitted -->
+<p>Tutorial que da a mostrar una manera de crear un molde con el fin de poder generar copias de una misma pieza/objeto en Fusion 360.</p>
+<hr>
+<h1 id="contenido-del-tutorial">Contenido del tutorial.</h1>
+<ul>
+<li><a href="#paso-1-creacion-de-sketch-y-lineas-de-referencia">Paso 1 - Creación de Sketch y líneas de referencia.</a></li>
+<li><a href="#paso-2-creacion-del-solido">Paso 2 - Creación del sólido.</a></li>
+<li><a href="#paso-3-creacion-de-la-base-del-molde">Paso 3 - Creación de la base del molde.</a></li>
+<li><a href="#paso-2-mezcla-de-ingredientes">Paso 2 - Mezcla de Ingredientes</a></li>
+<li><a href="#paso-4-tratado-de-curvas-para-el-desmolde">Paso 4 - Tratado de curvas para el desmolde.</a></li>
+</ul>
+<hr>
+<h2 id="paso-1-creación-de-sketch-y-líneas-de-referencia">Paso 1. Creación de Sketch y líneas de referencia.</h2>
+<p>Para iniciar nuestro tutorial, debemos iniciar Fusion 360 y crear un Sketch en el plano frontal. Luego, creamos un eje de simetría con el comando Línea, sin importar su longitud. Finalmente dejamos la línea creada como tipo de línea de construcción y así quede como referencia.</p>
+<p><img src="/img/moldes/01.png" alt="Linea de referencia"></p>
+<p>Repetimos el comando de línea con el fin de crear el contorno de nuestro molde. No importan las medidas, ya que se pueden ir cambiando a voluntad propia a medida que uno avanza. Debemos finalizar el Sketch una vez realizado nuestro contorno. Debe quedar con una forma similar a la imagen siguiente:</p>
+<p><img src="/img/moldes/02.png" alt="Forma contorno"></p>
+<h2 id="paso-2-creación-del-sólido">Paso 2. Creación del sólido.</h2>
+<p>Una vez que ya tenemos nuestra forma creada, utilizaremos el comando Revolve para poder generar un sólido de nuestra curva cerrada. Debemos seleccionar nuestra curva como perfil a trabajar y nuestra linea de referencia como eje. Podemos ir cambiando las medidas de nuestro Sketch libremente y el comando Revolve se irá adaptando a los cambios.</p>
+<p><img src="/img/moldes/03.png" alt="Revolve"></p>
+<p>Aplicaremos el comando Fillet, con el fin de suavizar las esquinas de nuestro molde. Debemos aplicarlo tanto en las curvas exteriores como interiores.</p>
+<p><img src="/img/moldes/04.png" alt="Fillet"></p>
+<h2 id="paso-3-creación-de-la-base-del-molde">Paso 3. Creación de la base del molde.</h2>
+<p>Ya tenemos nuestra geometría inicial y lo que queremos ahora es poder crear a través de ésta base nuestro molde final.</p>
+<p>Para esto, crearemos otro Sketch eligiendo la cara inferior de la geometría. Luego, crearemos un cuadrado de tamaño mayor a nuestro objeto creado.</p>
+<p><img src="/img/moldes/05.png" alt="Cuadrado"></p>
+<p>Al cuadrado creado le aplicaremos el comando Extrude hasta el punto que sobrepase nuestra geometría creada. Le bajaremos la opacidad, con tal de poder detectar lo que sucede en su interior.</p>
+<p><img src="/img/moldes/06.png" alt="Extrude"></p>
+<p>Nos dirigimos ahora a la apariencia de nuestra geometría, apretando el botón A y utilizaremos el material de Pintura Esmaltado Brillante, asi podemos entender de mejor manera la relación entre nuestra huella y el sólido al cual queremos generar el molde.</p>
+<p><img src="/img/moldes/07.png" alt="Material"></p>
+<p>Como paso siguiente, tendremos que utilizar el comando combinar, en donde utilizaremos el sólido como &ldquo;Cuerpo Objetivo&rdquo;, nuestra geometría o huella como &ldquo;Cuerpo de Herramienta&rdquo; con un tipo de operación de &ldquo;Corte&rdquo; y la casilla de &ldquo;Mantener herramientas&rdquo; activada. Tras esto, podremos observar que en nuestro sólido queda marcada la huella del objeto, dejando un molde del objeto que queremos copiar.</p>
+<p><img src="/img/moldes/08.png" alt="Combinar"></p>
+<p><img src="/img/moldes/09.png" alt="Molde"></p>
+<h2 id="paso-4-tratado-de-curvas-para-el-desmolde">Paso 4. Tratado de curvas para el desmolde.</h2>
+<p>Cuando lleguemos al punto de querer generar el desmolde de nuestro objeto, debemos tener cuidado con los ángulos muy rectos, ya que estos nos dificultarán el poder sacar el objeto de la huella. Es por esto que debemos seguir los siguientes pasos.</p>
+<p>Primero, utilizaremos el comando Análsis de Sección, dentro del menú de Inspección y seleccionaremos uno de los costados del sólido, desplazando el comando hacia la mitad de nuestro cuerpo, para observar cómo es nuestro molde por dentro y justamente ver todo los ángulos rectos a trabajar.</p>
+<p><img src="/img/moldes/10.png" alt="Inspección"></p>
+<p>Para poder trabajar éstos ángulos, apagaremos la capa del sólido y encenderemos la capa del Sketch junto a la capa de la primera geometría creada. Con esto, crearemos un nuevo Sketch, utilizando el plano principal y que indicamos al principio. Para luego utilizar el comando Intersectar, dentro del menú Crear y submenú Proyectar/Incluir.</p>
+<p><a href="/img/moldes/11.png">Intersectar</a></p>
+<p>Colocamos como filtro de selección la opción de sólido, apretando en nuestro objeto, para luego apagar la capa del cuerpo, quedandonos con el contorno de éste. Apagamos la capa del objeto, junto al primer Sketch realizado. Quedandonos con un Sketch que incluye el fillet realizado al sólido.</p>
+<p><a href="/img/moldes/12.png">Intersectar</a></p>
+<p>Creamos otra línea de referencia, desde el punto medio del Sketch. Luego seleccionaremos todas nuestras líneas creadas y las dejaremos en modo construcción, para así tener éstas geometrías como líneas de referencia.</p>
+<p><a href="/img/moldes/13.png">Líneas construcción</a></p>
+<p>Creamos una nueva línea, desde el centro hasta el punto superior a la base (ver imagen de referencia), creando una nueva geometría que sobrepase la original, para entregar un ángulo de desmolde, el cual no debería superar los 5º a 8º grados de desmolde. Luego de esto, finalizamos el sketch.</p>
+<p><a href="/img/moldes/14.png">Ángulo de demoslde</a></p>
+<p>Encendemos la capa de nuestro molde, para utilizar nuevamente el comando Revolve. Utilizando como perfil nuestra geometría recién creada y como eje la línea de referencia. El comando toma de forma automática la operación Cortar, lo cual es justamente lo que queremos que realice a nuestro molde. Tras finalizar el comando, podemos notar cómo nuestro molde toma un mayor tamaño de forma constante, solucionando los problemas que se pueden generar al hacer el vaciado del molde.</p>
+<p><a href="/img/moldes/15.png">Espacio de desmolde</a></p>
+<p>En la imagen podemos observar el espacio faltante entre el molde y nuestro objeto a copiar, el cual vendría siendo nuestro ángulo de desmolde.
+Con esto finalizamos el tutorial.</p>
+<h2 id="galería-de-imágenes">Galería de Imágenes</h2>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//01.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//01.png" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//01.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//02.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//02.png" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//02.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//03.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//03.png" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//03.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//04.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//04.png" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//04.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//05.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//05.png" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//05.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//06.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//06.png" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//06.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//07.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//07.png" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//07.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//08.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//08.png" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//08.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//09.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//09.png" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//09.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//10.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//10.png" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//10.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//11.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//11.png" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//11.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//12.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//12.png" alt="12th" />
+				    </div>
+			      <figcaption>
+		          <p>12th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//12.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//13.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//13.png" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//13.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//14.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//14.png" alt="14th" />
+				    </div>
+			      <figcaption>
+		          <p>14th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//14.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/moldes//15.png');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/moldes//15.png" alt="15th" />
+				    </div>
+			      <figcaption>
+		          <p>15th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/moldes//15.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<p><a href="#contenido-del-tutorial">Volver Arriba</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
