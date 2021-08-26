@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>6.1 - Experimentación Material - Francesco Bertolo - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://fbertolo.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://fbertolo.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://fbertolo.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/post-1/">0 - Post 1</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/planimetr%C3%ADas/">1 - Planimetría</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/mecanizado-2.5-ejes/">3 - Mecanizado 2.5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/dise%C3%B1o-generativo/">4 - Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/impresion3d/">5 - Impresión 3D</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/experimentacionmateriales/">6 - Experimentación Material</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://fbertolo.github.io/docs/experimentacion2.0/">6.1 - Experimentación Material</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/moldes/">Complementario - Creación de Molde</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://fbertolo.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">6.1 - Experimentación Material</h1>
+<div class="content ">
+  <!-- raw HTML omitted -->
+<p>Nuestra segunda experimentación con materiales con fines de poder desarrollar un producto en base a la utilización de un molde impreso en 3D.</p>
+<hr>
+<h1 id="contenido-de-la-receta">Contenido de la receta.</h1>
+<ul>
+<li><a href="#materiales-a-utilizar">Materiales a utilizar</a></li>
+<li><a href="#utensilios-a-utilizar">Utensilios a utilizar</a></li>
+<li><a href="#molde-en-fusion-360">Molde en Fusion 360</a></li>
+<li><a href="#paso-1-preparaci%C3%B3n-de-la-c%C3%A1scara-de-huevo">Primera experimentación fallida</a></li>
+<li><a href="#paso-1-mezcla-de-ingredientes">Paso 1 - Mezcla de Ingredientes</a></li>
+<li><a href="#paso-2-moldeado">Paso 2 - Moldeado</a></li>
+<li><a href="#paso-3-desmolde">Paso 3 - Desmolde</a></li>
+<li><a href="#conclusiones">Conclusiones</a></li>
+</ul>
+<hr>
+<h3 id="materiales-a-utilizar">Materiales a utilizar.</h3>
+<ul>
+<li>Agua.</li>
+<li>Alginato.</li>
+<li>Relación 2:1, es decir, cada 2 de Agua es 1 de Alginato.</li>
+</ul>
+<h3 id="utensilios-a-utilizar">Utensilios a utilizar.</h3>
+<ul>
+<li>Plato hondo o bowl.</li>
+<li>Mezquino.</li>
+<li>Molde impreso en 3D.</li>
+</ul>
+<p><img src="/img/experimentacion2.0/Utensilios/01.jpg" alt="Utensilios"></p>
+<h3 id="molde-en-fusion-360">Molde en Fusion 360.</h3>
+<p>Modelo de nuestro molde y contra molde en Fusion 360.</p>
+<div>
+    <iframe 
+    src='https://a360.co/3Bhob36'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<h2 id="primera-experimentación-fallida">Primera experimentación fallida.</h2>
+<p>Nuestro primer intento de experimentación, fue una receta encontrada en la página web Materiom, la cual consistía principalmente en el uso de cenizas de madera combinado con agua, gelatina y alginato para crear una mezcla consistente y obtener como resultado final un material liso y duro. Lamentablemente, ésta primera aproximación a la receta no obtuvo buenos resultados, lo cual lo podemos atribuir a un excesivo uso de Agua como ingrediente. A la vez, nos quedamos sin cenizas como uso de ingrediente, por lo que tuvimos que desechar nuestro avance y buscar una receta alternativa.</p>
+<p>A continuación, se puede observar imágenes que evidencian lo sucedido.</p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//01.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//01.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//01.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//02.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//02.JPG" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//02.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//03.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//03.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//03.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//04.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//04.jpg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//04.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//05.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//05.jpg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//05.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//06.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//06.jpg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//06.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//07.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//07.JPG" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//07.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//08.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//08.JPG" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//08.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//09.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//09.JPG" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//09.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//10.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//10.JPG" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//10.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//11.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//11.JPG" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//11.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//12.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//12.JPG" alt="12th" />
+				    </div>
+			      <figcaption>
+		          <p>12th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//12.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/intentofallido//13.JPG');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//13.JPG" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/intentofallido//13.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<h2 id="paso-1-mezcla-de-ingredientes">Paso 1. Mezcla de ingredientes.</h2>
+<p>Dado al primer intento fallido y que nos quedamos sin cenizas, encontramos como solución, el uso de la mezcla de Alginato con Agua, para así rellenar el molde 3D.</p>
+<p>El uso de Alginato con Agua es bastante simple y no tiene mayores complejidades. Sólo se debe mezclar y aplicar con rapidez, dado que el material es de secado rápido.</p>
+<p>Se debe mezclar en un pote/bowl/plato hondo, el agua junto al alginato en una proporción de 2:1, es decir, que por cada 2 de Agua es 1 de Alginato. Nosotros utilizamos los típicos vasos rojos de plástico, usando el doble de volumen en agua para la cantidad de polvo de alginato que necesitabamos para nuestro molde.</p>
+<p>Primero, se debe vertir el polvo de alginato en nuestro utensilio a utilizar e ir agregando el agua de forma lenta y constante, mientras se va mezclando con el mezquino de forma rápida, hasta que la mezcla queda de forma homogénea y viscosa.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//01.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//01.jpg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//01.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//02.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//02.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//02.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//03.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//03.jpg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//03.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//04.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//04.jpg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//04.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//05.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//05.jpg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//05.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//06.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//06.jpg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//06.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//07.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//07.jpg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//07.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//08.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//08.jpg" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//08.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//09.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//09.jpg" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//09.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/mezcla//10.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/mezcla//10.jpg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/mezcla//10.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h2 id="paso-2-moldeado">Paso 2. Moldeado.</h2>
+<p>Una vez que tenemos nuestra mezcla, la colocamos en nuestro molde. No fue necesario acomodar el material en el molde, dadas sus características, que se amoldó de forma automática.</p>
+<p>Apoyamos el contra molde y generamos presión, con el fin de que el exceso de material saliera por las ranuras creadas.</p>
+<p>Finalmente lo dejamos secar en posición por unos 10 minutos aproximadamente.</p>
+<p>Se debe tener presente que el material &ldquo;suda&rdquo; y sigue botando agua por las próximas horas.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3464.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3464.jpg" alt="Img 3464" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3464</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3464.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3465.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3465.jpg" alt="Img 3465" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3465</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3465.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3468.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3468.jpg" alt="Img 3468" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3468</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3468.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3469.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3469.jpg" alt="Img 3469" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3469</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3469.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3470.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3470.jpg" alt="Img 3470" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3470</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3470.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3471.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3471.jpg" alt="Img 3471" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3471</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3471.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3472.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3472.jpg" alt="Img 3472" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3472</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3472.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3473.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3473.jpg" alt="Img 3473" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3473</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3473.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3474.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3474.jpg" alt="Img 3474" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3474</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/moldeado//IMG_3474.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h2 id="paso-3-desmolde">Paso 3. Desmolde.</h2>
+<p>Para finalizar, debemos sacar el contramolde para así poder obtener nuestro trabajo final. Debimos aplicar palanca con un cuchillo por las esquinas del molde, para así poder evitar cualquier problema y extrar la contraparte. A la vez, fuimos cortando partes que sobraban y excedían del molde, para que el objeto quedara más limpio y prolijo.</p>
+<p>Nota: Forrar las dos partes de nuestro molde en alusaplast, para evitar que las piezas se queden pegadas como ocurrio en nuestro caso.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3476.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3476.jpg" alt="Img 3476" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3476</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3476.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3477.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3477.jpg" alt="Img 3477" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3477</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3477.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3478.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3478.jpg" alt="Img 3478" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3478</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3478.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3479.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3479.jpg" alt="Img 3479" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3479</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3479.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3480.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3480.jpg" alt="Img 3480" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3480</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3480.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3481.jpg');" >
+				      <img itemprop="thumbnail" src="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3481.jpg" alt="Img 3481" />
+				    </div>
+			      <figcaption>
+		          <p>Img 3481</p>
+			      </figcaption>
+				    <a href="https://fbertolo.github.io//img/experimentacion2.0/desmolde//IMG_3481.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h2 id="conclusiones">Conclusiones.</h2>
+<p>Como conclusión de nuestro trabajo, nos quedamos con dos cosas para trabajar y solucionar.</p>
+<ol>
+<li>Cambiar nuestra receta, añadiendo algún material orgánico, con el fin de que nuestro producto final sea de material bio orgánico y que tenga características más rígidas.</li>
+<li>(Opcional) Arreglar nuestro modelo del molde, con el fin de poder realizar una nueva impresión y que nuestro molde sea un poco más grande, acompañado de muro más altos para que nuestras Pupas y escarabajos no se puedan caer de la bandeja.</li>
+</ol>
+<p><a href="#contenido-de-la-receta">Volver Arriba</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
